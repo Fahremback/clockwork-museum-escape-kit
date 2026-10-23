@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fahremback.github.io/clockwork-museum-escape-kit/sitemap.xml
