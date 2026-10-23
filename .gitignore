@@ -1,0 +1,8 @@
+# Paid customer downloads must never be published with GitHub Pages.
+*.pdf
+*.zip
+.env
+.env.*
+__pycache__/
+*.pyc
+node_modules/
