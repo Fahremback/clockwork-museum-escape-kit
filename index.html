@@ -3,169 +3,298 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="A printable escape room game for families, friends and classrooms. Solve original museum puzzles at home. Instant PDF download, A4 and US Letter.">
+  <meta name="description" content="Turn your home into an escape room with The Clockwork Museum. A printable family puzzle game with 24 cards, 3 chapters, and instant PDF delivery.">
+  <meta name="theme-color" content="#101b20">
   <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#102937">
   <link rel="canonical" href="https://fahremback.github.io/clockwork-museum-escape-kit/">
   <link rel="icon" href="assets/favicon.png" type="image/png" sizes="64x64">
-  <link rel="preload" as="image" href="assets/cover.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero-desktop.webp" type="image/webp" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="The Clockwork Museum">
   <meta property="og:url" content="https://fahremback.github.io/clockwork-museum-escape-kit/">
-  <meta property="og:title" content="Printable Escape Room Game | The Clockwork Museum">
-  <meta property="og:description" content="Download, print and solve a museum mystery together. Original puzzles for family game nights, parties and classrooms.">
+  <meta property="og:title" content="Turn Your Home Into an Escape Room | The Clockwork Museum">
+  <meta property="og:description" content="Download, print and play a mysterious museum escape game. 24 puzzle and story cards, three chapters, ages 10+.">
   <meta property="og:image" content="https://fahremback.github.io/clockwork-museum-escape-kit/assets/share.jpg">
   <meta property="og:image:width" content="1254">
   <meta property="og:image:height" content="1254">
-  <meta property="og:image:alt" content="Cover of The Clockwork Museum printable escape mystery kit">
+  <meta property="og:image:alt" content="The Clockwork Museum original print-and-play escape game">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Printable Escape Room Game | The Clockwork Museum">
-  <meta name="twitter:description" content="Print a museum mystery at home. 24 game cards across three chapters in the Complete kit.">
+  <meta name="twitter:title" content="The Clockwork Museum — A Printable Escape Room">
+  <meta name="twitter:description" content="A museum mystery for family game night. Download, print and solve it together.">
   <meta name="twitter:image" content="https://fahremback.github.io/clockwork-museum-escape-kit/assets/share.jpg">
-  <title>Printable Escape Room Game for Families | The Clockwork Museum</title>
+  <title>The Clockwork Museum | Printable Escape Room Game for Families</title>
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script src="site.js?v=3" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://fahremback.github.io/clockwork-museum-escape-kit/#website",
-        "name": "The Clockwork Museum",
-        "url": "https://fahremback.github.io/clockwork-museum-escape-kit/",
-        "inLanguage": "en"
-      },
-      {
-        "@type": "Product",
-        "@id": "https://fahremback.github.io/clockwork-museum-escape-kit/#starter",
-        "name": "The Clockwork Museum — Starter Escape",
-        "description": "A one-chapter print-and-play museum escape mystery: six puzzle cards, two story cards, twelve hints, six solutions and a host guide in A4 and US Letter PDFs.",
-        "image": "https://fahremback.github.io/clockwork-museum-escape-kit/assets/share.jpg",
-        "category": "Printable escape room game",
-        "offers": {
-          "@type": "Offer",
-          "url": "https://payhip.com/b/WZegu",
-          "price": "6.99",
-          "priceCurrency": "USD"
-        }
-      },
-      {
-        "@type": "Product",
-        "@id": "https://fahremback.github.io/clockwork-museum-escape-kit/#complete",
-        "name": "The Clockwork Museum — Complete Escape Kit",
-        "description": "A three-chapter print-and-play museum escape mystery: eighteen puzzle cards, six story cards, thirty-six hints, eighteen worked solutions and a certificate in A4 and US Letter PDFs.",
-        "image": "https://fahremback.github.io/clockwork-museum-escape-kit/assets/share.jpg",
-        "category": "Printable escape room game",
-        "offers": {
-          "@type": "Offer",
-          "url": "https://payhip.com/b/BNgAl",
-          "price": "14.99",
-          "priceCurrency": "USD"
-        }
-      }
+      {"@type":"WebSite",
+       "@id":"https://fahremback.github.io/clockwork-museum-escape-kit/#website",
+       "name":"The Clockwork Museum",
+       "url":"https://fahremback.github.io/clockwork-museum-escape-kit/",
+       "inLanguage":"en"},
+      {"@type":"Product",
+       "@id":"https://fahremback.github.io/clockwork-museum-escape-kit/#starter",
+       "name":"The Clockwork Museum — Starter Escape",
+       "description":"One chapter with 6 puzzle cards, 2 story cards, 12 hints, 6 solutions and a host guide. Printable A4 and US Letter PDF download.",
+       "image":"https://fahremback.github.io/clockwork-museum-escape-kit/assets/share.jpg",
+       "category":"Printable escape room game",
+       "offers":{"@type":"Offer","url":"https://payhip.com/b/WZegu","price":"6.99","priceCurrency":"USD"}},
+      {"@type":"Product",
+       "@id":"https://fahremback.github.io/clockwork-museum-escape-kit/#complete",
+       "name":"The Clockwork Museum — Complete Escape Kit",
+       "description":"Three chapters with 18 puzzle cards, 6 story cards, 36 hints, 18 solutions, code strips, a host guide and completion certificate. Printable A4 and US Letter PDF download.",
+       "image":"https://fahremback.github.io/clockwork-museum-escape-kit/assets/share.jpg",
+       "category":"Printable escape room game",
+       "offers":{"@type":"Offer","url":"https://payhip.com/b/BNgAl","price":"14.99","priceCurrency":"USD"}}
     ]
   }
   </script>
-  <style>
-  :root{--navy:#0f2938;--deep:#0b1c29;--ivory:#fbf8ef;--paper:#f3ecde;--gold:#d2a96e;--teal:#347a7a;--ink:#173242;--muted:#526870;--border:#ded2be}
-  *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.6}h1,h2,h3,.serif{font-family:Georgia,"Times New Roman",serif;line-height:1.14;letter-spacing:-.035em;text-wrap:balance}h1,h2,h3,p{margin-top:0}h2{font-size:clamp(2.1rem,4.3vw,3.65rem)}a{color:inherit}.shell{width:min(1120px,calc(100% - 44px));margin:auto}.eyebrow{font-size:.79rem;letter-spacing:.14em;font-weight:800;text-transform:uppercase;color:var(--teal)}.skip-link{position:absolute;left:12px;top:-80px;z-index:20;padding:9px 15px;background:var(--gold);color:var(--deep);font-weight:700}.skip-link:focus{top:12px}a:focus-visible,summary:focus-visible{outline:3px solid #ab660e;outline-offset:4px}main a:focus-visible,.hero a:focus-visible{outline-color:#f6c16a}section[id]{scroll-margin-top:16px}a,summary{touch-action:manipulation}
-  .announcement{text-align:center;background:var(--deep);color:#e8d0a8;font-size:.74rem;letter-spacing:.07em;padding:8px 10px}.nav{display:flex;justify-content:space-between;align-items:center;min-height:72px;gap:24px}.brand{font-family:Georgia,serif;font-size:1.16rem;font-weight:800;letter-spacing:-.035em;text-decoration:none}.brand em{color:var(--teal);font-style:normal}.links{display:flex;align-items:center;gap:21px}.links>a:not(.btn){font-size:.9rem;text-decoration:none}.links>a:hover{text-decoration:underline}
-  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:13px 23px;font-size:.91rem;line-height:1.2;text-decoration:none;font-weight:800;border:1px solid transparent;border-radius:3px;cursor:pointer;transition:transform .15s}.btn:hover{transform:translateY(-2px)}.btn-gold{background:var(--gold);color:var(--deep)}.btn-dark{background:var(--deep);color:white}.btn-outline{border-color:currentColor;color:inherit}.btn-full{width:100%}
-  .hero{background:radial-gradient(circle at 77% 30%,#2d5561,var(--navy) 55%,var(--deep));color:#fff;padding:75px 0 90px}.hero-layout{display:grid;grid-template-columns:1fr 1.04fr;gap:63px;align-items:center}.hero h1{font-size:clamp(3.25rem,5.1vw,5.65rem);margin:20px 0 26px}.hero h1 strong{color:#eac28a;font-weight:inherit}.hero p{max-width:490px;color:#dbe6e6;font-size:1.09rem}.hero .eyebrow{color:#d6b687}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:29px 0}.traits{display:flex;gap:12px 22px;flex-wrap:wrap;font-size:.84rem;color:#d4dfe0;margin-top:34px}.traits span:before{content:"✦ ";color:var(--gold)}.hero-image{position:relative}.hero-image img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border:7px solid #ffffff26;box-shadow:0 30px 65px #0007;transform:rotate(1deg)}.stamp{position:absolute;bottom:-23px;right:-12px;width:117px;height:117px;display:grid;place-content:center;text-align:center;border-radius:50%;background:var(--gold);color:var(--deep);font-weight:800;line-height:1.2;transform:rotate(-12deg);box-shadow:0 9px 25px #0006}
-  .section{padding:92px 0}.section.alt{background:var(--paper)}.center{max-width:690px;margin:0 auto 45px;text-align:center}.center .eyebrow{margin-bottom:11px}.center h2{margin-bottom:15px}.center p{color:var(--muted);font-size:1.04rem}.how{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.how article,.item{background:white;border:1px solid var(--border);padding:27px}.how .num{color:var(--teal);font-family:Georgia,serif;font-size:2.15rem}.how h3{font-size:1.45rem;margin:8px 0}.how p,.item p{color:var(--muted);font-size:.95rem;margin:0}
-  .example{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:65px}.sheet{background:#ded5c4;padding:18px;box-shadow:13px 17px 28px #2222;transform:rotate(-1deg)}.sheet img{width:100%;display:block;box-shadow:0 3px 9px #0002}.sheet figcaption{color:#617179;text-align:center;font-size:.74rem;padding-top:10px}.example p{color:var(--muted)}.example .eyebrow{margin-bottom:14px}.example h2{margin-bottom:23px}.note{border-left:4px solid var(--gold);padding-left:17px;font-weight:700;color:var(--teal);margin-top:25px}
-  .contents{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.item .big{font:2.55rem Georgia,serif;color:var(--teal)}.item h3{font:800 1rem system-ui,sans-serif;letter-spacing:0;margin:12px 0 8px}.item p{font-size:.9rem}.bonus{background:var(--navy);color:#fff;display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:center;padding:45px}.bonus h2{margin:12px 0}.bonus .eyebrow{color:var(--gold)}.bonus p{color:#bdcfd0}.bonus ul{padding:0;list-style:none}.bonus li{border-bottom:1px solid #385464;padding:15px 0 15px 28px;position:relative}.bonus li:before{content:"✦";color:var(--gold);position:absolute;left:0}
-  .prices{display:grid;grid-template-columns:repeat(2,1fr);gap:23px;max-width:948px;margin:0 auto}.price-box{border:1px solid var(--border);padding:37px;background:#fff;display:flex;flex-direction:column;position:relative}.price-box.featured{background:var(--navy);color:white;box-shadow:12px 15px 0 #d5c6aa}.flag{position:absolute;right:25px;top:0;background:var(--gold);color:var(--deep);padding:8px 14px;font-size:.7rem;font-weight:800;letter-spacing:.08em}.price-box h3{font-size:2.04rem;margin:2px 0 12px}.price-box .small{font-size:.9rem;color:#77838a}.price-box.featured .small{color:#ced7d8}.amount{font:3.8rem Georgia,serif;letter-spacing:-.06em;margin:19px 0}.amount small{font-size:1.1rem}.price-box ul{list-style:none;padding:0;margin:8px 0 28px;flex:1}.price-box li{padding:11px 0;border-top:1px solid #e1e5e1;font-size:.92rem}.price-box.featured li{border-color:#3b5460}.price-box li:before{content:"✓";font-weight:800;color:var(--teal);margin-right:12px}.price-box.featured li:before{color:var(--gold)}.price-box .aside{font-size:.77rem;text-align:center;margin:12px 0 0;color:#77838a}.price-box.featured .aside{color:#c7d5d5}
-  .guarantee{display:flex;gap:32px;align-items:center;padding:43px;background:#e9dfc9;border:1px solid #d6c5a5}.round{width:105px;height:105px;flex-shrink:0;border:2px solid var(--teal);color:var(--teal);border-radius:50%;display:grid;place-content:center;text-align:center;transform:rotate(-10deg);line-height:1.06;font-weight:700}.round b{font:2.65rem Georgia,serif}.round small{font-size:.72rem}.guarantee h2{font-size:2.2rem;margin:0 0 9px}.guarantee p{color:var(--muted);margin:0}
-  .faqs{max-width:820px;margin:auto}.faqs details{border-bottom:1px solid var(--border);padding:5px 0}.faqs summary{cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:17px 0;font-weight:700;list-style:none}.faqs summary:after{content:"+";font-size:1.45rem;color:var(--teal)}.faqs details[open] summary:after{content:"−"}.faqs p{color:var(--muted);padding:0 35px 16px 0;margin:0}
-  footer{background:var(--deep);color:#d0d8d9;padding:45px 0}footer .footer{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}footer p{font-size:.83rem;margin:10px 0 0}
-  @media(max-width:900px){.hero-layout,.example{grid-template-columns:1fr;gap:42px}.hero-image{max-width:650px;margin:auto}.contents{grid-template-columns:repeat(2,1fr)}.bonus{grid-template-columns:1fr}}
-  @media(max-width:620px){.shell{width:calc(100% - 32px)}.links>a:not(.btn){display:none}.links .btn{font-size:.72rem;min-height:39px;padding:9px 11px}.brand{font-size:.91rem}.hero{padding:55px 0}.hero h1{font-size:clamp(2.45rem,9vw,3.14rem)}.stamp{width:91px;height:91px;font-size:.8rem;right:-7px}.section{padding:65px 0}.how,.contents,.prices{grid-template-columns:1fr}.price-box.featured{box-shadow:7px 9px 0 #d5c6aa}.bonus,.guarantee{padding:25px}.guarantee{display:block;text-align:center}.round{margin:0 auto 20px}.how article{padding:23px}.sheet{padding:10px}.price-box{padding:27px}}
-  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
-  </style>
 </head>
 <body>
 <a class="skip-link" href="#top">Skip to content</a>
-<div class="announcement">ORIGINAL PRINT-AND-PLAY MYSTERY · INSTANT DIGITAL DOWNLOAD</div>
-<header class="shell nav">
-  <a class="brand" href="#top">THE CLOCKWORK <em>MUSEUM</em></a>
-  <nav class="links" aria-label="Page navigation"><a href="#inside">What's inside</a><a href="#faq">FAQ</a><a href="#pricing" class="btn btn-dark">Get the game →</a></nav>
+<div class="topbar">AN ORIGINAL PRINT-AT-HOME MYSTERY · DIGITAL DOWNLOAD</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="wordmark" href="#top">THE CLOCKWORK MUSEUM<span>PRINTABLE ESCAPE GAME</span></a>
+    <nav class="header-nav" aria-label="Site navigation">
+      <a href="#sample">See the game</a>
+      <a href="#inside">What's included</a>
+      <a href="#pricing" class="btn">Choose your kit <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
 </header>
 <main id="top" tabindex="-1">
-  <!-- HEADLINE / SUBHEADLINE / COVER -->
-  <section class="hero"><div class="shell hero-layout">
-    <div>
-      <div class="eyebrow">PRINTABLE ESCAPE ROOM GAME · AGES 10+</div>
-      <h1>One museum.<br>Three secrets.<br><strong>Your escape.</strong></h1>
-      <p>Turn family game night, a birthday party or a classroom afternoon into a museum escape mystery. Download the PDFs, print the cards and solve the clockwork puzzles together.</p>
-      <div class="hero-actions"><a href="#pricing" class="btn btn-gold">Choose your game →</a><a href="#sample" class="btn btn-outline">See actual cards</a></div>
-      <div class="traits"><span>24 game cards</span><span>Ages 10+</span><span>1–6 players</span><span>30–60 minutes</span></div>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow gold">THE MUSEUM CLOSES AT MIDNIGHT</div>
+        <h1 id="hero-title">Turn your home into <em>an escape room.</em></h1>
+        <p>Uncover a mystery hidden inside an old clockwork museum. Print the cards, gather your team, and solve three chapters of clues together.</p>
+        <div class="hero-action">
+          <a class="btn btn-primary" href="https://payhip.com/buy?link=BNgAl" aria-label="Buy Complete Escape Kit for 14 dollars and 99 cents">Get the Complete Kit · $14.99 <span aria-hidden="true">↗</span></a>
+          <a class="hero-secondary" href="#sample">See what's inside <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-small">Digital PDF download · Print at home · No physical box shipped</p>
+        <div class="hero-features" aria-label="Game information">
+          <div class="hero-feature"><b>30–60 min</b><small>Complete adventure</small></div>
+          <div class="hero-feature"><b>1–6 players</b><small>Play together</small></div>
+          <div class="hero-feature"><b>Ages 10+</b><small>Family friendly</small></div>
+          <div class="hero-feature"><b>24 cards</b><small>Complete edition</small></div>
+        </div>
+      </div>
     </div>
-    <div class="hero-image"><img src="assets/cover.webp" alt="The Clockwork Museum printable escape mystery cover with paper clue cards" width="1254" height="1254" fetchpriority="high" decoding="async"><div class="stamp">PRINT<br>AT HOME</div></div>
-  </div></section>
-  <section class="section"><div class="shell">
-    <div class="center"><div class="eyebrow">A mystery ready for your table</div><h2>Print it. Set it out. Start solving.</h2><p>No special locks, screens, or props. Just paper, scissors, a pencil, and a little curiosity.</p></div>
-    <div class="how"><article><div class="num">01.</div><h3>Download</h3><p>Pick your game and print the A4 or US Letter PDF.</p></article><article><div class="num">02.</div><h3>Discover</h3><p>Read the story, lay out the cards, and solve the clues.</p></article><article><div class="num">03.</div><h3>Escape</h3><p>Unlock the codes and bring the Great Clock back to life.</p></article></div>
-  </div></section>
-  <!-- ACTUAL SAMPLE -->
-  <section class="section alt" id="sample"><div class="shell example">
-    <figure class="sheet"><img src="assets/inside_preview.png" alt="Actual printable sheet showing two museum puzzle cards before cutting" width="1012" height="1432" loading="lazy" decoding="async"><figcaption>Real pages from the kit, shown before cutting.</figcaption></figure>
-    <div><div class="eyebrow">Look inside</div><h2>Real cards. Real clues. A little adventure.</h2><p>Each puzzle gives your team one digit. Six digits open a chapter's seal. A separate host answer key and two gentle hints for every puzzle keep the game moving.</p><p>Explore the Grand Atrium, repair the Clockwork Workshop, and solve the final mystery in the Star Observatory.</p><div class="note">A4 + US Letter · Easy to cut · Ready to play</div></div>
-  </div></section>
-  <!-- PACKAGE LIST -->
-  <section class="section" id="inside"><div class="shell">
-    <div class="center"><div class="eyebrow">Everything in the Complete kit</div><h2>The whole mystery, in one download.</h2><p>Clear instructions and original clues designed for families, friends, and classrooms.</p></div>
-    <div class="contents">
-      <div class="item"><div class="big">18</div><h3>Original puzzle cards</h3><p>Six bite-size puzzles per chapter.</p></div>
-      <div class="item"><div class="big">6</div><h3>Story cards</h3><p>Open and close each museum chapter.</p></div>
-      <div class="item"><div class="big">3</div><h3>Code strips</h3><p>Write each six-digit chapter code.</p></div>
-      <div class="item"><div class="big">36</div><h3>Gentle hints</h3><p>Two optional hints for each puzzle.</p></div>
-      <div class="item"><div class="big">18</div><h3>Worked solutions</h3><p>Answers in a separate host section.</p></div>
-      <div class="item"><div class="big">2</div><h3>Paper sizes</h3><p>Complete PDFs for A4 and US Letter.</p></div>
+  </section>
+  <div class="mini-ribbon">
+    <div class="container mini-ribbon-inner">
+      <span>Download instantly after purchase</span><span>Print in A4 or US Letter</span><span>No special props required</span>
     </div>
-  </div></section>
-  <!-- BONUSES -->
-  <section class="section alt"><div class="shell bonus">
-    <div><div class="eyebrow">Extra touches</div><h2>A little extra magic.</h2><p>Make your mystery night feel special without shopping for supplies.</p></div>
-    <ul><li>Printable Museum Escape Certificate</li><li>Secret ending and extra create-your-own clue challenge</li><li>Easy, Standard, and Expert difficulty options</li><li>Quick-start host guide and final print instructions</li></ul>
-  </div></section>
-  <!-- TWO PRICES -->
-  <section class="section" id="pricing"><div class="shell">
-    <div class="center"><div class="eyebrow">Choose your mystery</div><h2>One room or the whole museum?</h2><p>Choose the one-chapter Starter or the three-chapter Complete kit. Both are downloadable ZIP files with printable A4 and US Letter PDFs.</p></div>
-    <div class="prices">
-      <article class="price-box">
-        <h3>Starter Escape</h3><div class="small">One chapter. A perfect first mystery.</div><div class="amount"><small>$</small>6.99</div>
-        <ul><li>8 game cards: 6 puzzles + 2 story cards</li><li>Grand Atrium chapter and code strip</li><li>12 gentle hints + 6 solutions</li><li>Host guide and print instructions</li><li>A4 and US Letter PDFs</li></ul>
-        <a href="https://payhip.com/buy?link=WZegu" class="btn btn-outline btn-full checkout" data-edition="starter" rel="noopener noreferrer" aria-label="Buy Starter Escape for 6 dollars and 99 cents">Buy Starter · $6.99 →</a><div class="aside">Secure checkout via Payhip. Digital download.</div>
-      </article>
-      <article class="price-box featured">
-        <span class="flag">FULL ADVENTURE</span><h3>Complete Escape Kit</h3><div class="small">Three chapters and the full mystery.</div><div class="amount"><small>$</small>14.99</div>
-        <ul><li>24 game cards: 18 puzzles + 6 story cards</li><li>Three chapters and three code strips</li><li>36 gentle hints + 18 solutions</li><li>Completion certificate and secret ending</li><li>Three difficulty settings</li><li>A4 and US Letter PDFs</li></ul>
-        <a href="https://payhip.com/buy?link=BNgAl" class="btn btn-gold btn-full checkout" data-edition="complete" rel="noopener noreferrer" aria-label="Buy Complete Escape Kit for 14 dollars and 99 cents">Buy Complete · $14.99 →</a><div class="aside">Secure checkout via Payhip. Digital download.</div>
-      </article>
+  </div>
+
+  <section class="section story" aria-labelledby="story-title">
+    <div class="container story-layout">
+      <div>
+        <div class="eyebrow">THE STORY</div>
+        <h2 id="story-title">The Great Clock has stopped.</h2>
+        <p>It's 11:57 PM. The museum doors are locked, and the curator has left a trail of puzzles through three extraordinary rooms.</p>
+        <p>Your team must decode the clues, write down each chapter's six-digit code and restore the clock before the final bell.</p>
+        <div class="gold-rule"></div>
+        <ul class="checklist">
+          <li>Made for game nights, parties and classroom groups</li>
+          <li>Hints and a separate answer key for the host</li>
+          <li>Print at home with paper, scissors and a pencil</li>
+        </ul>
+      </div>
+      <figure class="story-photo">
+        <img src="assets/kit-on-desk.webp" alt="Actual printable pages from the Clockwork Museum kit arranged on an atmospheric desk" width="1500" height="920" loading="lazy" decoding="async">
+        <figcaption>Original game pages shown. Desk props are decorative and not included.</figcaption>
+      </figure>
     </div>
-  </div></section>
-  <!-- SEVEN-DAY GUARANTEE -->
-  <section class="section alt"><div class="shell guarantee">
-    <div class="round"><b>7</b><small>DAY<br>GUARANTEE</small></div>
-    <div><h2>Play with peace of mind.</h2><p>If the printable game isn't right for your group, request a refund within seven days of purchase through the seller's checkout support. That's our seven-day satisfaction guarantee.</p></div>
-  </div></section>
-  <!-- FAQ -->
-  <section class="section" id="faq"><div class="shell">
-    <div class="center"><div class="eyebrow">A few final answers</div><h2>Before you open the door.</h2></div>
-    <div class="faqs">
-      <details><summary>What exactly will I receive?</summary><p>Digital printable PDF files in A4 and US Letter. Starter has eight game cards. Complete has 24 cards. Each comes with clues, solutions, code strips, and a host guide.</p></details>
-      <details><summary>Do I need special locks or props?</summary><p>No. You only need a printer, paper, scissors, and a pencil. The host checks each code against the answer key.</p></details>
-      <details><summary>What ages is it for?</summary><p>Ages 10 and up. Younger players can join with an older helper. Every puzzle has two optional hints.</p></details>
-      <details><summary>How many people can play?</summary><p>One to six people is ideal. Larger groups can play in teams using extra printed copies.</p></details>
-      <details><summary>How long does a game take?</summary><p>Allow around 30 to 60 minutes for Complete, depending on your group and use of hints. Starter is shorter.</p></details>
-      <details><summary>Is this a physical product?</summary><p>No. This is an instant digital download. Nothing is shipped.</p></details>
-      <details><summary>Can I print both paper sizes?</summary><p>Yes. Choose the included A4 or US Letter PDF and print at 100% size.</p></details>
-      <details><summary>Can I play it with a class?</summary><p>Yes, for personal or your own classroom use. Please do not resell or redistribute the original PDF files.</p></details>
-      <details><summary>How does the seven-day guarantee work?</summary><p>Contact the seller through the checkout's support option within seven days of purchase to request your refund.</p></details>
+  </section>
+
+  <section class="section preview" id="sample" aria-labelledby="preview-title">
+    <div class="container">
+      <div class="preview-head">
+        <div><div class="eyebrow">REAL PAGES FROM THE DOWNLOAD</div><h2 id="preview-title">Take a look inside the mystery.</h2></div>
+        <p>These aren't concept drawings. Explore samples taken directly from the printable PDFs included with the game.</p>
+      </div>
+      <div class="gallery">
+        <div class="gallery-stage" id="gallery-stage">
+          <img id="gallery-image" src="assets/sample-atrium.webp" alt="Original printable page featuring Grand Atrium story and puzzle cards" width="1102" height="1426" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-side" role="group" aria-label="Preview different pages">
+          <button type="button" class="gallery-pick" aria-pressed="true" data-src="assets/sample-atrium.webp" data-alt="Original printable page featuring Grand Atrium story and puzzle cards" data-label="The Grand Atrium — actual PDF page">
+            <img src="assets/sample-atrium.webp" alt="" width="1102" height="1426" loading="lazy"><span>01 / Grand Atrium</span>
+          </button>
+          <button type="button" class="gallery-pick" aria-pressed="false" data-src="assets/sample-workshop.webp" data-alt="Original printable page with Clockwork Workshop puzzle cards" data-label="Clockwork Workshop — actual PDF page">
+            <img src="assets/sample-workshop.webp" alt="" width="1102" height="1426" loading="lazy"><span>02 / Workshop</span>
+          </button>
+          <button type="button" class="gallery-pick" aria-pressed="false" data-src="assets/sample-observatory.webp" data-alt="Original printable page with Star Observatory puzzle cards" data-label="Star Observatory — actual PDF page">
+            <img src="assets/sample-observatory.webp" alt="" width="1102" height="1426" loading="lazy"><span>03 / Observatory</span>
+          </button>
+          <button type="button" class="gallery-pick" aria-pressed="false" data-src="assets/sample-certificate.webp" data-alt="Original completion certificate page" data-label="Completion certificate — actual PDF page">
+            <img src="assets/sample-certificate.webp" alt="" width="1102" height="1426" loading="lazy"><span>04 / Certificate</span>
+          </button>
+          <button type="button" class="gallery-pick" aria-pressed="false" data-src="assets/sample-cover.webp" data-alt="Cover of the Complete escape mystery PDF" data-label="Complete kit cover — actual PDF page">
+            <img src="assets/sample-cover.webp" alt="" width="1102" height="1426" loading="lazy"><span>05 / Kit cover</span>
+          </button>
+        </div>
+      </div>
+      <div class="preview-caption">
+        <span id="gallery-caption" aria-live="polite">The Grand Atrium — actual PDF page</span>
+        <button type="button" id="open-preview">Enlarge this page ↗</button>
+      </div>
     </div>
-  </div></section>
+  </section>
+
+  <section class="section chapter-section" aria-labelledby="chapters-title">
+    <div class="container">
+      <div class="section-intro light">
+        <div class="eyebrow gold">THREE CHAPTERS · ONE STORY</div>
+        <h2 id="chapters-title">Follow the clues through the museum.</h2>
+        <p>The Complete Kit takes your team through all three rooms. Each chapter ends with a code to solve.</p>
+      </div>
+      <div class="chapter-grid">
+        <article class="chapter"><div class="chapter-index">CHAPTER I</div><h3>The Grand Atrium</h3><p>Discover the curator's first trail of clues in the museum halls.</p><img src="assets/card-number-trail.webp" alt="Actual Grand Atrium number-trail puzzle card" width="980" height="485" loading="lazy"></article>
+        <article class="chapter"><div class="chapter-index">CHAPTER II</div><h3>Clockwork Workshop</h3><p>Repair the mechanisms and piece together the next code.</p><img src="assets/card-double-gear.webp" alt="Actual Clockwork Workshop gear puzzle card" width="980" height="485" loading="lazy"></article>
+        <article class="chapter"><div class="chapter-index">CHAPTER III</div><h3>Star Observatory</h3><p>Follow the final signs to the museum's last secret.</p><img src="assets/card-moon-path.webp" alt="Actual Star Observatory puzzle card" width="980" height="485" loading="lazy"></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section how" aria-labelledby="how-title">
+    <div class="container">
+      <div class="section-intro">
+        <div class="eyebrow">FROM DOWNLOAD TO GAME NIGHT</div>
+        <h2 id="how-title">Your adventure starts in three steps.</h2>
+        <p>Preparation is simple. The puzzles, story and answers are already in the files.</p>
+      </div>
+      <div class="steps">
+        <article class="step"><span class="step-number">01</span><h3>Download</h3><p>Purchase your edition and get the printable PDF files. Choose A4 or US Letter.</p></article>
+        <article class="step"><span class="step-number">02</span><h3>Print &amp; prepare</h3><p>Print the pages at 100%, cut along the marked borders and keep the host answer key nearby.</p></article>
+        <article class="step"><span class="step-number">03</span><h3>Solve together</h3><p>Read the story, solve six puzzles per chapter and collect the digits for each code.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section includes" id="inside" aria-labelledby="inside-title">
+    <div class="container includes-layout">
+      <div class="includes-photo">
+        <img src="assets/cover.webp" alt="Clockwork Museum digital product cover showing museum-themed printable cards" width="1254" height="1254" loading="lazy" decoding="async">
+      </div>
+      <div class="includes-content">
+        <div class="eyebrow">THE COMPLETE KIT</div>
+        <h2 id="inside-title">Everything you need to play.</h2>
+        <p>The printable bundle contains the story, puzzles, code sheets, hints and host solutions — with two paper sizes included.</p>
+        <ul class="includes-list">
+          <li><strong>18</strong> puzzle cards</li>
+          <li><strong>6</strong> story cards</li>
+          <li><strong>3</strong> code strips</li>
+          <li><strong>36</strong> optional hints</li>
+          <li><strong>18</strong> worked solutions</li>
+          <li><strong>2</strong> printable paper sizes</li>
+        </ul>
+        <p style="margin-top:22px;font-size:.87rem;color:#626c64">Also included: host guide, 3 difficulty settings, bonus ending and completion certificate.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+    <div class="container">
+      <div class="section-intro">
+        <div class="eyebrow">PICK YOUR ADVENTURE</div>
+        <h2 id="pricing-title">One room or the entire museum?</h2>
+        <p>Both editions are one-time purchases with digital PDF files for A4 and US Letter paper.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="edition">
+          <div class="eyebrow">THE SHORT VERSION</div>
+          <h3>Starter Escape</h3>
+          <p class="description">A single chapter to introduce your group to the mystery.</p>
+          <div class="price">$6.99 <span>USD · one-time</span></div>
+          <ul class="offer-list">
+            <li>8 cards: 6 puzzles and 2 story cards</li>
+            <li>The Grand Atrium chapter</li>
+            <li>1 six-digit code strip</li>
+            <li>12 hints and 6 worked solutions</li>
+            <li>Host guide and printing instructions</li>
+            <li>A4 and US Letter PDFs</li>
+          </ul>
+          <a class="btn btn-outline btn-block checkout" href="https://payhip.com/buy?link=WZegu" data-edition="starter" aria-label="Buy Starter Escape for 6 dollars and 99 cents">Buy Starter · $6.99 <span aria-hidden="true">↗</span></a>
+          <p class="after-cta">Digital download · No box shipped</p>
+        </article>
+        <article class="edition featured">
+          <span class="flag">THE FULL ADVENTURE</span>
+          <div class="eyebrow gold">ALL THREE CHAPTERS</div>
+          <h3>Complete Escape Kit</h3>
+          <p class="description">Every room, every code and the museum's final mystery.</p>
+          <div class="price">$14.99 <span>USD · one-time</span></div>
+          <ul class="offer-list">
+            <li>24 cards: 18 puzzles and 6 story cards</li>
+            <li>All 3 museum chapters and code strips</li>
+            <li>36 hints and 18 worked solutions</li>
+            <li>3 difficulty options and host guide</li>
+            <li>Secret ending and completion certificate</li>
+            <li>A4 and US Letter PDFs</li>
+          </ul>
+          <a class="btn btn-primary btn-block checkout" href="https://payhip.com/buy?link=BNgAl" data-edition="complete" aria-label="Buy Complete Escape Kit for 14 dollars and 99 cents">Get Complete Kit · $14.99 <span aria-hidden="true">↗</span></a>
+          <p class="after-cta">Digital download · No box shipped</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section trust" aria-labelledby="guarantee-title">
+    <div class="container trust-layout">
+      <div class="trust-round"><strong>7</strong><span>DAY PROMISE</span></div>
+      <div>
+        <h2 id="guarantee-title">Buy with peace of mind.</h2>
+        <p>If the printable game isn't right for your group, contact the seller through your checkout receipt within seven days of purchase to request a refund.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-intro"><div class="eyebrow">GOOD TO KNOW</div><h2 id="faq-title">Before you start the clock.</h2></div>
+      <div class="faq-list">
+        <details><summary>Is this a physical escape room kit?</summary><p>No. It is a digital download with printable PDF files. Nothing is shipped. You print and cut the cards at home.</p></details>
+        <details><summary>What do I need to play?</summary><p>A printer, paper, scissors, and a pencil. No padlocks or specialty props are required. The game host checks each chapter code using the answer key.</p></details>
+        <details><summary>How many people can play?</summary><p>One to six players is ideal. A larger group can use additional printed copies and play in teams.</p></details>
+        <details><summary>What age group is this for?</summary><p>Recommended for ages 10 and up. Younger players can join with help. Each puzzle has two optional hints.</p></details>
+        <details><summary>How long does it take?</summary><p>Allow approximately 30–60 minutes for the Complete edition, depending on your group and hint use. The one-chapter Starter edition is shorter.</p></details>
+        <details><summary>Which paper format is included?</summary><p>Both A4 and US Letter PDFs are included. Print the version that matches your paper at 100% scale.</p></details>
+        <details><summary>Can I use it with my class?</summary><p>Yes, for your own classroom or personal use. Please do not resell or redistribute the original PDF files.</p></details>
+        <details><summary>How does the seven-day guarantee work?</summary><p>Contact the seller through the checkout receipt or the support link below within seven days of purchase to request a refund.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section last-call" aria-labelledby="last-title">
+    <div class="container">
+      <div class="eyebrow gold">YOUR NEXT GAME NIGHT STARTS HERE</div>
+      <h2 id="last-title">The museum is waiting for you.</h2>
+      <p>Download the Complete Escape Kit, set out the cards and follow the clues.</p>
+      <a class="btn btn-primary" href="https://payhip.com/buy?link=BNgAl" aria-label="Buy Complete Escape Kit for 14 dollars and 99 cents">Get the Complete Kit · $14.99 <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
 </main>
-<!-- FOOTER -->
-<footer><div class="shell footer"><div><div class="brand">THE CLOCKWORK MUSEUM</div><p>Original printable mysteries for curious minds.</p></div><div><p>© 2026 The Clockwork Museum · Digital product only.</p><p>Questions or refund requests? <a href="https://payhip.com/BeliEnterprise/contact" rel="noopener noreferrer">Contact the seller</a>.</p></div></div></footer>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><div class="wordmark">THE CLOCKWORK MUSEUM<span>PRINTABLE ESCAPE GAME</span></div><p>Original print-and-play mysteries for family game nights, parties and classrooms.</p></div>
+    <div><p>© 2026 The Clockwork Museum · Digital products only.</p><p>Questions or refund requests? <a href="https://payhip.com/BeliEnterprise/contact">Contact the seller</a>.</p></div>
+  </div>
+</footer>
+<div class="mobile-purchase">
+  <div><strong>Complete Escape Kit</strong><span>One-time $14.99 USD</span></div>
+  <a class="btn btn-primary" href="https://payhip.com/buy?link=BNgAl" aria-label="Buy Complete Escape Kit for 14 dollars and 99 cents">Get the kit ↗</a>
+</div>
+<div class="lightbox" id="preview-lightbox" role="dialog" aria-modal="true" aria-label="Enlarged product preview" hidden>
+  <button type="button" class="lightbox-close" id="close-preview" aria-label="Close preview">×</button>
+  <img id="lightbox-image" src="assets/sample-atrium.webp" width="1102" height="1426" alt="Enlarged printable game sample">
+</div>
 </body>
 </html>

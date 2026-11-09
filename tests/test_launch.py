@@ -58,6 +58,7 @@ class LaunchChecks(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.raw = (ROOT / "index.html").read_text(encoding="utf-8")
+        cls.css = (ROOT / "styles.css").read_text(encoding="utf-8")
         cls.page = Page()
         cls.page.feed(cls.raw)
 
@@ -75,12 +76,16 @@ class LaunchChecks(unittest.TestCase):
         self.assertEqual(self.page.headings.count("h1"), 1)
         self.assertIn("top", self.page.ids)
         self.assertIn("skip-link", self.raw)
-        self.assertIn(":focus-visible", self.raw)
+        self.assertIn(":focus-visible", self.css)
+        self.assertIn("@media(max-width:680px)", self.css)
+        self.assertIn("prefers-reduced-motion", self.css)
         for a in self.page.anchors:
             if a.get("href", "").startswith("#"):
                 self.assertIn(a["href"][1:], self.page.ids)
         for img in self.page.images:
-            self.assertTrue(img.get("alt"), img)
+            # Thumbnail buttons already provide accessible text. Empty alt is
+            # appropriate for their decorative duplicate image.
+            self.assertIn("alt", img)
             self.assertGreater(int(img.get("width", 0)), 0, img)
             self.assertGreater(int(img.get("height", 0)), 0, img)
             self.assertTrue((ROOT / img["src"]).is_file())
@@ -124,6 +129,22 @@ class LaunchChecks(unittest.TestCase):
         self.assertLess((ROOT / "assets/cover.webp").stat().st_size, 450_000)
         self.assertLess((ROOT / "assets/share.jpg").stat().st_size, 650_000)
         self.assertLess((ROOT / "assets/favicon.png").stat().st_size, 30_000)
+        for name in ("hero-desktop.webp", "kit-on-desk.webp", "scene.webp",
+                     "sample-atrium.webp", "sample-workshop.webp",
+                     "sample-observatory.webp", "sample-certificate.webp",
+                     "sample-cover.webp"):
+            asset = ROOT / "assets" / name
+            self.assertTrue(asset.is_file(), name)
+            self.assertLess(asset.stat().st_size, 450_000, name)
+
+    def test_gallery_is_real_and_interactive(self):
+        script = (ROOT / "site.js").read_text(encoding="utf-8")
+        self.assertIn("aria-pressed", script)
+        self.assertIn("Escape", script)
+        self.assertIn("gallery-image", self.raw)
+        self.assertIn('aria-modal="true"', self.raw)
+        self.assertNotIn("★", self.raw)  # No invented star ratings
+        self.assertNotIn("aggregateRating", self.raw)
 
 
 if __name__ == "__main__":
